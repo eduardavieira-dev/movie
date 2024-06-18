@@ -4,7 +4,7 @@ function tabela(filtro = '') {
     $(document).ready(function () {
         $.ajax({
             type: 'POST',
-            url: './PHP/tabela.php',
+            url: '../PHP/tabela.php',
             contentType: 'application/x-www-form-urlencoded; charset=UTF-8',
             dataType: 'json',
             success: function (data) {
@@ -33,11 +33,11 @@ function exibir(data, filtro) {
     t = $('#filmes');
 
 
-    if (filtro) {
-        filmes = filmes.filter(filme => {
-            return filme.nome.toLowerCase().includes(filter.toLowerCase());
-        });
-    }
+    // if (filtro) {
+    //     filmes = filmes.filter(filme => {
+    //         return filme.nome.toLowerCase().includes(filtro.toLowerCase());
+    //     });
+    // }
 
     filmes.forEach(function (filme) {
         var item = $('<div>').addClass('filme');
@@ -51,7 +51,7 @@ function exibir(data, filtro) {
         item.append(imgContainer);
 
         var divAssitir = $('<div>').addClass('confirmacao-container');
-        var botaoAssistir = $('<button>').addClass('confirmar-btn').attr('type', 'button').data('id', filme.cod);
+        var botaoAssistir = $('<button>').addClass('confirmar-btn').attr('type', 'button').text('assistir').data('id', filme.cod);
         divAssitir.append(botaoAssistir);
         item.append(divAssitir);
 
