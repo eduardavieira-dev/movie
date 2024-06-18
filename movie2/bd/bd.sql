@@ -20,6 +20,32 @@ email VARCHAR(120),
 senha_adm VARCHAR(120)
 );
 
+CREATE TABLE generos (
+id int AUTO_INCREMENT PRIMARY KEY,
+nome VARCHAR(120)
+);
+
+CREATE TABLE filmes (
+id int AUTO_INCREMENT PRIMARY KEY,
+nome VARCHAR(120),
+imagem VARCHAR(120),
+genero INT,
+video VARCHAR(120),
+FOREIGN KEY (genero) REFERENCES generos(id) ON DELETE SET NULL ON UPDATE CASCADE
+) ENGINE = InnoDB;
+
+INSERT INTO generos (nome) VALUES
+('Ação'),
+('Comédia'),
+('Drama'),
+('Ficção Científica'),
+('Terror'),
+('Romance'),
+('Animação'),
+('Documentário'),
+('Fantasia');
+
+
 
 
 
