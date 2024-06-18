@@ -13,6 +13,11 @@ email VARCHAR(120),
 senha VARCHAR(120)
 );
 
+CREATE TABLE senhaadm (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    senha VARCHAR(120)
+);
+
 CREATE TABLE adm (
 id int AUTO_INCREMENT PRIMARY KEY,
 nome VARCHAR(120),
@@ -44,6 +49,9 @@ INSERT INTO generos (nome) VALUES
 ('Animação'),
 ('Documentário'),
 ('Fantasia');
+
+INSERT INTO adm (nome, senha_adm)
+VALUES ('tiago', '$2y$10$bJ0ZKj8eOI1u.r3HWae2EOGsq2SbufwIfFqGPrB9EuqRWawkeUDAe');
 
 
 
