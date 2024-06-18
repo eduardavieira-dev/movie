@@ -29,7 +29,7 @@ $(document).ready(function () {
 });
 
 function t() {
-    alert('deu certo');
+    window.location.href = '../../principal/HTML/principal.html';
 }
 
 function w(message) {

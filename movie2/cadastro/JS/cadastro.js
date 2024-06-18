@@ -33,7 +33,7 @@ function t() {
     //         window.location.href = 'pag-principal.html';
     //     }
     // });
-    window.location.href = 'http://localhost/fono/src/Login/login.html';
+    window.location.href = '../../principal/HTML/principal.html';
 }
 function e() {
     //     Swal.fire({
