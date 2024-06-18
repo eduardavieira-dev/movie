@@ -50,7 +50,7 @@ function exibir(data, filtro) {
         item.append(imgContainer);
 
         let divAssitir = $('<div>').addClass('confirmacao-container');
-        let botaoAssistir = $('<button>').addClass('confirmar-btn').attr('type', 'button').text('assistir').data('id', filme.cod);
+        let botaoAssistir = $('<button>').addClass('confirmar-btn').attr('type', 'button').text('assistir').data('id', filme.id);
         divAssitir.append(botaoAssistir);
         item.append(divAssitir);
 
@@ -68,3 +68,9 @@ $('#search-input').on('keyup', function () {
     let filtro = $(this).val();
     tabela(filtro);
 });
+
+$(document).on('click', '.confirmar-btn', function () {
+    var id = $(this).data('id');
+    localStorage.setItem('id', id);
+    window.location.href = '../../assistir/HTML/assistir.html';
+})
