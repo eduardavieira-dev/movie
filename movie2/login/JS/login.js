@@ -29,7 +29,7 @@ $(document).ready(function () {
 });
 
 function t() {
-    window.location.href = '../../principal/HTML/principal.html';
+    window.location.href = '../principal/HTML/principal.html';
 }
 
 function w(message) {
