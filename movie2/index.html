@@ -11,7 +11,7 @@
             margin: 0;
             padding: 0;
         }
-        body {
+        body, .body-i {
             z-index: 1;
             background: linear-gradient(-2deg, #8a46f3, #ad76f7,  #121212, #8a46f3, #703bbf,#121212, #121212);
             background-size: 100% 300%;
@@ -111,19 +111,12 @@
             line-height: 1.7;
         }
 
-/* Form */
-.form-container{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    z-index: 101;
-}
+
 
 
     </style>
 </head>
-<body>
+<body class="body-i">
 
 
 <header class="header">
@@ -135,8 +128,8 @@
                 <a href="#" class="nav_link">Home</a>
             </li>
         </ul>
-        <button class="button">Login</button>
-        <button class="button">Cadastro</button>
+        <button class="button"><a href="./login/login.html">Login</a></button>
+        <button class="button"><a href="./cadastro/cadastro.html">Cadastro</a></button>
     </nav>
 </header>
 
@@ -147,12 +140,7 @@
     <p>Faça o login e começe a assistir!</p>
 </div>
  
-<section class="home">
-    <div class="form-container">
-        <i class="uil uil times"></i>
-    
-    </div>
-</section>
+
    
 
 
