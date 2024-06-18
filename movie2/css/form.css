@@ -6,7 +6,6 @@
 }
 body, .body-a{
     font-family: "Poppins", sans-serif;
-   
     margin: 0;
     padding: 20px;
     color: #fff;
@@ -143,6 +142,20 @@ body, .body-l {
 }
 
 .container a:hover{
+    color: #fff; 
+}
+
+ a{
+    
+    color: #aa83e4;
+    text-decoration: none;
+    display: inline-block; 
+    margin-bottom: 20px;
+    margin-right: 300px;
+    font-size: 15px;
+}
+
+a:hover{
     color: #fff; 
 }
 
