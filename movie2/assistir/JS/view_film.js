@@ -32,7 +32,7 @@ function exibirFilme(filme) {
         <h3>${filme.nome}</h3>
         <div class="video-container">
             <video controls>
-                <source src="${filme.video}" type="video/mp4">
+                <source src="${filme.video}" class="w-video" type="video/mp4">
                 Seu navegador não suporta o elemento de vídeo.
             </video>
         </div>

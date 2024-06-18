@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+/* Reset de estilos */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilos gerais */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: "Poppins", sans-serif;
+    margin: 0;
+    padding: 20px;
+    color: #fff;
+    background-color: #121212;
+    background: linear-gradient(-2deg, #8a46f3, #ad76f7, #121212, #8a46f3, #703bbf, #121212, #121212);
+    background-size: 100% 300%;
+    width: 100%;
+    height: 100vh;
+    animation: animate 15s ease infinite;
+}
+
+.container {
+    max-width: 600px;
+    margin: 20px;
+    padding: 20px;
+    background: #262228;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+h2 {
+    margin-bottom: 20px;
+    color: #fff;
+}
+
+.btn {
+    display: block;
+    width: 15%;
+    padding: 15px;
+    margin: 5px 2px;
+    background: #3a1e65;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.btn:hover {
+    background: #1e0e35;
+}
+
+/* Estilização específica para o vídeo */
+#filmeDetalhes {
+    margin-top: 20px;
+    position: relative;
+    width: 100%;
+}
+
+#filmeDetalhes video {
+    width: 100%;
+    height: auto;
+    max-width: 100%; /* Garante que o vídeo não ultrapasse a largura do container */
+    display: block;
+    margin: 0 auto;
+}
+
+/* Estilos para a classe .w-video */
+#filmeDetalhes .w-video {
+    width: 100%;
+    height: auto;
+    max-width: 100%; /* Garante que o vídeo não ultrapasse a largura do container */
+    display: block;
+    margin: 0 auto;
+}
