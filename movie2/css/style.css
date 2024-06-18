@@ -13,6 +13,15 @@ body {
     height: 100vh;
     margin: 0;
 }
+body, .body-i {
+    z-index: 1;
+    background: linear-gradient(-2deg, #8a46f3, #ad76f7,  #121212, #8a46f3, #703bbf,#121212, #121212);
+    background-size: 100% 300%;
+    width: 100%;
+    height: 60vh;
+    animation: animate 15s ease infinite;
+    font-family: "Poppins", sans-serif;
+}
 
 .container {
     background: #fff;
@@ -106,3 +115,5 @@ a{
     text-align: start;
     position: relative;
 }
+
+
